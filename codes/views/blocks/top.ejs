@@ -1,0 +1,9 @@
+div.navbar.navbar-static-top.bs-docs-nav
+	div.container
+		div.navbar-header 
+			a.navbar-brand WorkFlow
+		div.collapse.navbar-collapse.bs-navbar-coolapse
+			ul.nav.navbar-nav
+				each nav in config.nav
+					li
+						a(href=nav.router)=nav.name

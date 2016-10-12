@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/libs/bootstrap3/css/bootstrap.min.css">
+    <style type="text/css">
+    	*{font-family: "微软雅黑"}
+    	.page-header{color: #6f5499}
+    </style>    
+  </head>
+  <body>
+  <% include blocks/header %>
+  <div class="container">
+	  <div class="row">
+	    <button type="button" class="btn btn-primary" id="addTask">添加任务</button>
+	    <button type="button" class="btn btn-primary" id="addTask">周总结</button>
+	  </div>
+	  <div class="row page-header">
+        <h1>进行中</h1>
+      </div>
+	  <div class="row">
+	  	<table class="table">
+	        <thead>
+	          <tr>
+	            <th>任务名称</th>
+	            <th>所属项目</th>
+	            <th>前端</th>
+	            <th>后台</th>
+	            <th>开始时间</th>
+	            <th>预计结束时间</th>
+	            <th>紧急程度</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>1</td>
+	            <td>Mark</td>
+	            <td>Otto</td>
+	            <td>@mdo</td>
+	          </tr>
+	        </tbody>
+      	</table>
+	  </div>
+  
+	  <div class="row page-header">
+	    <h1>已完成</h1>
+	  </div>	
+
+	  <div class="row">
+	  	<table class="table">
+	        <thead>
+	          <tr>
+	            <th>任务名称</th>
+	            <th>所属项目</th>
+	            <th>前端</th>
+	            <th>后台</th>
+	            <th>开始时间</th>
+	            <th>预计结束时间</th>
+	            <th>结束时间</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>1</td>
+	            <td>Mark</td>
+	            <td>Otto</td>
+	            <td>@mdo</td>
+	          </tr>
+	        </tbody>
+      	</table>
+	  </div>
+  </div>
+
+  <% include blocks/jslibs %>
+  <script src="/libs/bootstrap3/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
