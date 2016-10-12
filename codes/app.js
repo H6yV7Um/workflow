@@ -5,6 +5,7 @@ var logger = require('morgan');
 var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var member = require('./routes/member');
@@ -13,6 +14,8 @@ var project = require('./routes/project');
 var oaApi = require('./routes/api/auth/oa');
 
 var app = express();
+
+mongoose.connect("mongodb://localhost/workflow");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
