@@ -43,6 +43,7 @@ app.use('/', routes);
 app.use('/member', member);
 app.use('/task', task);
 app.use('/project', project);
+app.use('/api/role', require('./routes/api/role'));
 
 app.use(function(req, res, next) {
   next();return;
